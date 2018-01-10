@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+html,body{
+  height: 100%;
+}
+
+
+body{
+  background: url(change.jpeg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction:column;
+
+}
+
+
+header h1{
+  font-family: 'Abril Fatface', cursive;
+  color: #FFFFFF;
+  margin-top: 10%;
+  margin-left: 12%;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  font-size: 70px;
+  
+}
+
+.green2 p{
+  color:lightyellow;
+  text-align: center;
+  font-size: 30px;
+  font-family: Helvetica Neue;
+  margin-top: 0;
+}
+.intro h2{
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+
+
+input[type=text], select {
+  width: 130%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  height: 40px;
+  box-sizing: border-box;
+  text-align: left;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+button[type=submit] {
+  width: 70%;
+
+  color: grey;
+
+  margin: 25px 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  background: aliceblue;
+
+  padding: 15px 50px;
+
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: snow;
+  letter-spacing: 1px;
+  -webkit-transition: box-shadow 1s ease;
+  transition: box-shadow 1s ease;
+  font-size: 15px;
+
+
+}
+a{
+  text-decoration: none;
+  color:grey;
+}
+
+
+input[type=submit]:hover {
+  box-shadow:  1px 3px 3px rgba(233,212,179,1);
+  -webkit-transition: box-shadow 1s ease;
+  transition: box-shadow 1s ease;
+}
+
+div {
+  border-radius: 5px;
+  padding: 10px;
+  width:50%;
+  text-align: center;
+
+}
+
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: white;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      /*grid-template-rows: repeat(6, 16%);*/
+      grid-template-areas: "header header" "CS2 CS3" "footer footer"; }
+
+    header {
+      grid-area: header; }
+
+
+    .CS2 {
+      grid-area: CS2; }
+
+    .CS3 {
+      grid-area: CS3; }
+
+    /*.VS1 {
+      grid-area: VS1;
+    }
+    .VS2 {
+      grid-area: VS2;
+
+    }
+
+    .VS3 {
+      grid-area: VS3;
+    }  */
+    footer {
+      grid-area: footer; } }
+  @media screen and (min-width: 1000px) {
+    body {
+      background-color: white;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-areas: "header header header" "CS2 CS2  CS3 " "footer footer footer"; } } }
+
+/*# sourceMappingURL=styles.css.map */
